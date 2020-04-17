@@ -4,28 +4,39 @@ import './App.css';
 // eslint-disable-next-line
 import UnderstandingBreakpoints from './grid/UnderstandingBreakpoints.js';
 
+import FillingSpace from './grid/FillingSpace.js';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
 
-      <h1>Breakpoints</h1>
-      <UnderstandingBreakpoints />
+    <h1>Breakpoints</h1>
+    <ul>
+    <li>xs >= 0px</li>
+    <li>sm >= 600px</li>
+    <li>md >= 960px</li>
+    <li>lg >= 1280px</li>
+    <li>xl >= 1920px</li>
+    </ul>
+    <p>Setting to 'auto' helps during initial layout and development</p>
 
-    </div>
+    <UnderstandingBreakpoints />
+
+    <h1>Filling Space</h1>
+
+    <FillingSpace />
+    <h2>flex-start</h2>
+    <FillingSpace justify='flex-start'/>
+    <h2>flex-end</h2>
+    <FillingSpace justify='flex-end'/>
+    <h2>center</h2>
+    <FillingSpace justify='center'/>
+    <h2>space-between</h2>
+    <FillingSpace justify='space-between'/>
+    <h2>space-around</h2>
+    <FillingSpace justify='space-around'/>
+
+    </>
+
   );
 }
 
