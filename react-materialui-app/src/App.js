@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+// eslint-disable-next-line
 import UnderstandingBreakpoints from './grid/UnderstandingBreakpoints.js';
 
 function App() {
@@ -20,6 +21,10 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <h1>Breakpoints</h1>
+      <UnderstandingBreakpoints />
+
     </div>
   );
 }
