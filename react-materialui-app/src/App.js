@@ -1,15 +1,17 @@
 import React from 'react';
+// eslint-disable-next-line
 import logo from './logo.svg';
 import './App.css';
-// eslint-disable-next-line
-import UnderstandingBreakpoints from './grid/UnderstandingBreakpoints.js';
 
+import UnderstandingBreakpoints from './grid/UnderstandingBreakpoints.js';
 import FillingSpace from './grid/FillingSpace.js';
+import AbstractingContainersAndItems from './grid/AbstractingContainersAndItems.js';
+
 function App() {
   return (
     <>
 
-    <h1>Breakpoints</h1>
+    <h2>Breakpoints</h2>
     <ul>
     <li>xs >= 0px</li>
     <li>sm >= 600px</li>
@@ -21,19 +23,22 @@ function App() {
 
     <UnderstandingBreakpoints />
 
-    <h1>Filling Space</h1>
+    <h2>Filling Space</h2>
 
     <FillingSpace />
-    <h2>flex-start</h2>
+    <h3>flex-start</h3>
     <FillingSpace justify='flex-start'/>
-    <h2>flex-end</h2>
+    <h3>flex-end</h3>
     <FillingSpace justify='flex-end'/>
-    <h2>center</h2>
+    <h3>center</h3>
     <FillingSpace justify='center'/>
-    <h2>space-between</h2>
+    <h3>space-between</h3>
     <FillingSpace justify='space-between'/>
-    <h2>space-around</h2>
+    <h3>space-around</h3>
     <FillingSpace justify='space-around'/>
+
+    <h2>Abstracting Containers and Items</h2>
+    <AbstractingContainersAndItems />
 
     </>
 
