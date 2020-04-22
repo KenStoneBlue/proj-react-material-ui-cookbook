@@ -6,6 +6,7 @@ import './App.css';
 import UnderstandingBreakpoints from './grid/UnderstandingBreakpoints.js';
 import FillingSpace from './grid/FillingSpace.js';
 import AbstractingContainersAndItems from './grid/AbstractingContainersAndItems.js';
+import FixedColumnLayout from './grid/FixedColumnLayout.js';
 
 function App() {
   return (
@@ -39,6 +40,9 @@ function App() {
 
     <h2>Abstracting Containers and Items</h2>
     <AbstractingContainersAndItems />
+
+    <h2>Fixed Column Layout</h2>
+    <FixedColumnLayout />
 
     </>
 
